@@ -1,0 +1,9 @@
+name: LimitPeople
+version: '1.0'
+main: com.geullo.limitpeople.LimitPeople
+authors: [ Geullo, RuTaeY ]
+commands:
+  인원제한:
+    aliases:
+      - limitPeople
+      - lp
