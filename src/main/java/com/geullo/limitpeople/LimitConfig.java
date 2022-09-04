@@ -12,8 +12,9 @@ public class LimitConfig extends ConfigYaml {
         save();
     }
     public static void initConfig() {
-        File config = new File(LimitPeople.getPlugin().getDataFolder(), "limit.yml");
+        File config = new File(LimitPeople.getPlugin().getDataFolder(), "");
         if (!config.exists()){
+            config.mkdirs();
             LimitPeople.limitConfig = new LimitConfig();
             LimitPeople.limitConfig.setMaxPlayer(10);
             LimitPeople.maxPeople = 10;
